@@ -17,12 +17,12 @@ export class GoogleMainPage {
     clickSearch(){
         cy.get('.FPdoLc > center > .gNO89b').click({force: true})
     }
+    
     clickWikipediaLink(){
 
-        cy.get('.g > :nth-child(1) > [jscontroller="SC7lYd"] > .kvH3mc > .jGGQ5e > .yuRUbf > :nth-child(1) > a > .LC20lb').click({force: true})
+        cy.contains('Wikipedia').should('exist').click() 
+        cy.get(':nth-child(1) > .MjjYud > .g > .kvH3mc > .jGGQ5e > .yuRUbf > :nth-child(1) > a > .LC20lb').click()  
     }
-
-
   }
 
 
